@@ -11,7 +11,7 @@ func indexPage(w http.ResponseWriter, r *http.Request) {
 
 func main() {
     http.HandleFunc("/", indexPage)
-    fmt.Println("Start! Post :8080")
+    fmt.Println("Starting sever with Post :8080")
     http.ListenAndServe(":8080", nil)
     //fmt.Printf("hello, world\n")
 }
